@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1>Titulo</h1>
-        <h3>Subtitulo</h3>
+        <h3 id="subtitulo">Subtitulo</h3>
         <hr>
         <nav>
             <ul>
@@ -29,7 +29,8 @@
         </nav>
     </header>
     <main>
-        <p>Lorem ipsum <b>dolor sit amet</b> consectetur <strong> adipisicing elit. </strong>Ut cupiditate
+        <p class="texto_grande">Lorem ipsum <b>dolor sit amet</b> consectetur <strong> adipisicing elit. </strong>Ut
+            cupiditate
             exercitationem <em>corrupti, neque hic</em>
             voluptatem <i>natus tempora at!</i> Sed nemo harum, vel ad magni sint cupiditate, minima incidunt atque
             voluptatem
@@ -57,12 +58,12 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Datos</td>
-                    <td>Datos</td>
-                    <td>Datos</td>
+                    <td class="texto_grande campo">Datos</td>
+                    <td class="texto_grande">Datos</td>
+                    <td class="texto_grande">Datos</td>
                 </tr>
                 <tr>
-                    <td>Datos</td>
+                    <td>Datos<br>Datos<br>Datos</td>
                     <td>Datos</td>
                     <td>Datos</td>
                 </tr>
@@ -96,14 +97,23 @@
             </ol>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores obcaecati exercitationem eos
-                delectus animi distinctio numquam, inventore perferendis. Dignissimos totam eius rem unde magnam qui
-                ipsa quia quidem nam quo corrupti, ab molestiae cupiditate nostrum. Labore veritatis, quos porro qui
-                sunt blanditiis, sapiente dolores facilis sequi repellendus iste consectetur impedit atque. Autem fugit
-                dolorem maiores quasi, consequatur asperiores accusantium ducimus velit, laborum tempora nobis?
-                Temporibus, at magnam sequi quos sapiente eaque enim quibusdam? Molestiae aperiam aut vel. At, sapiente
-                blanditiis! Amet facilis soluta tempore fugiat qui impedit dignissimos sequi, numquam dolor natus! Dicta
-                repellat saepe numquam sunt delectus dolorem.</p>
+            <div>
+                <p class="texto_grande">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero asperiores
+                    obcaecati
+                    exercitationem eos
+                    delectus animi distinctio numquam, inventore perferendis. Dignissimos totam eius rem unde magnam qui
+                    ipsa quia quidem nam quo corrupti, ab molestiae cupiditate nostrum. Labore veritatis, quos porro qui
+                    sunt blanditiis, sapiente dolores facilis sequi repellendus iste consectetur impedit atque. Autem
+                    fugit
+                    dolorem maiores quasi, consequatur asperiores accusantium ducimus velit, laborum tempora nobis?
+                    Temporibus, at magnam sequi quos sapiente eaque enim quibusdam? Molestiae aperiam aut vel. At,
+                    sapiente
+                    blanditiis! Amet facilis soluta tempore fugiat qui impedit dignissimos sequi, numquam dolor natus!
+                    Dicta
+                    repellat saepe numquam sunt delectus dolorem.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reprehenderit, maiores distinctio impedit
+                totam necessitatibus? Libero soluta exercitationem facere et?</p>
         </article>
         <article>
             <form action="" method="get">
@@ -141,7 +151,8 @@
                         <option value="registro">Registro</option>
                         <option value="cancelar">Cancelar Subscripcion</option>
                     </select><br>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribanos tu comentario aqui"></textarea>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10"
+                        placeholder="Escribanos tu comentario aqui"></textarea>
                 </fieldset>
                 <input type="submit" value="Enviar">
                 <button>Registrar</button>

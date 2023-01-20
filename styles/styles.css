@@ -1,0 +1,69 @@
+html,
+body,
+h1,
+#subtitulo {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+p {
+    background-color: thistle;
+    text-align: justify;
+}
+
+#subtitulo {
+    font-size: 32px;
+    line-height: 60px;
+}
+
+.texto_grande {
+    color: blue;
+}
+
+main p {
+    border: 1px solid red;
+}
+
+.texto_grande.campo {
+    border: 1px solid red;
+}
+
+td.texto_grande {
+    background-color: violet;
+}
+
+article > p{
+    border: 1px solid green;
+}
+
+table{
+    width: 100%;
+    max-width: 900px;
+    min-width: 400px;
+}
+
+main{
+    width: 80%;
+}
+video{
+    width: 100%;
+    height: 100vh;
+}
+
+form{
+    background-image: url("https://i.pinimg.com/736x/c0/8e/31/c08e318f68544c54f12299c0246ae981.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+a{
+    text-decoration: none;
+}
+
+td{
+    vertical-align: bottom;
+}
