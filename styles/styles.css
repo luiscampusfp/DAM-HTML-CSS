@@ -20,6 +20,11 @@ p {
     line-height: 60px;
 }
 
+#subtitulo:hover {
+    color: white;
+    background-color: blue;
+}
+
 .texto_grande {
     color: blue;
 }
@@ -36,34 +41,120 @@ td.texto_grande {
     background-color: violet;
 }
 
-article > p{
+article>p {
     border: 1px solid green;
 }
 
-table{
+table {
     width: 100%;
     max-width: 900px;
     min-width: 400px;
 }
 
-main{
+main {
     width: 80%;
 }
-video{
+
+video {
     width: 100%;
     height: 100vh;
 }
 
-form{
+form {
     background-image: url("https://i.pinimg.com/736x/c0/8e/31/c08e318f68544c54f12299c0246ae981.jpg");
     background-attachment: fixed;
-    background-size: cover; 
+    background-size: cover;
+    position: relative;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-td{
+td {
     vertical-align: bottom;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+    height: 200px;
+    padding: 0;
+}
+
+header nav ul li {
+    background-color: red;
+    color: white;
+    padding: 10px 30px;
+    flex-grow: 1;
+}
+
+.contacto{
+    flex-grow: 2;
+}
+
+
+
+header nav ul li a {
+    color: white;
+}
+
+article ol {
+    list-style-type: decimal-leading-zero;
+}
+
+.google {
+    width: 300px;
+    margin: 30px 50px;
+    padding: 40px 100px 20px;
+    background-color: red;
+    border: solid 8px blue;
+    border-radius: 20px 80px;
+}
+
+.starbucks {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 11;
+}
+
+.apple {
+    float: right;
+}
+
+.apple2 {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
+}
+
+@media (max-width:520px){
+    main{
+        width: 100%;
+    }
+}
+
+@media (max-width:400px){
+    .apple2 {
+        display: none;
+    }
+}
+
+@media (min-width:1600px){
+    h1,#subtitulo{
+        font-size: 62px;
+    }
+}
+
+@media (min-width:800px) and (max-width:900px){
+    header nav ul li {
+        background-color: rgb(99, 29, 29);
+    }
 }
