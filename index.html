@@ -8,6 +8,9 @@
     <meta name="description" content="pagina creada ">
     <meta name="keywords" content="palabra clave refresco comida">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="querys/jquerycode.js"></script>
     <title>Titulo Pagina</title>
 </head>
 
@@ -18,20 +21,24 @@
         <hr>
         <nav>
             <ul>
-                <li>
+                <li class="navegacion">
                     <a href="https://www.google.es/">Google</a>
                 </li>
-                <li class="contacto">
+                <li class="navegacion contacto">
                     <a href="pages/contacto.html">Contacto</a>
                 </li>
-                <li>Texto</li>
+                <li class="navegacion" onclick="Evento()">Texto</li>
             </ul>
         </nav>
-        
+
     </header>
-    <img class="apple2" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" width="100px" alt="">
+    <img class="apple2" onmouseenter="Evento()"
+        src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
+        width="100px" alt="">
     <main>
-        <img class="apple" src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png" width="100px" alt="">
+        <img class="apple"
+            src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
+            width="100px" alt="">
         <p class="texto_grande">Lorem ipsum <b>dolor sit amet</b> consectetur <strong> adipisicing elit. </strong>Ut
             cupiditate
             exercitationem <em>corrupti, neque hic</em>
@@ -120,7 +127,8 @@
         </article>
         <article>
             <form action="" method="get">
-                <img class="starbucks" src="https://blog.hubspot.es/hs-fs/hubfs/ES%20Blog%20images/Los%2015%20logos%20m%C3%A1s%20creativos%20e%20inspiradores%20del%20mundo/logo_famoso_starbucks.jpg?width=650&name=logo_famoso_starbucks.jpg"
+                <img class="starbucks"
+                    src="https://blog.hubspot.es/hs-fs/hubfs/ES%20Blog%20images/Los%2015%20logos%20m%C3%A1s%20creativos%20e%20inspiradores%20del%20mundo/logo_famoso_starbucks.jpg?width=650&name=logo_famoso_starbucks.jpg"
                     alt="" width="100px">
                 <fieldset>
                     <label for="nombre">Nombre:</label>
@@ -187,5 +195,6 @@
     </section>
     <footer></footer>
 </body>
+<script src="querys/code.js"></script>
 
 </html>
