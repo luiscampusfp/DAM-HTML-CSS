@@ -39,6 +39,11 @@
         <img class="apple"
             src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
             width="100px" alt="">
+        <img class="apple3"
+            src="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-dallas-shootings-don-add-are-speech-zones-used-4.png"
+            width="100px" alt="">
+        <img class="apple4" src="https://1000marcas.net/wp-content/uploads/2020/03/Logo-Ubuntu.png" width="100px"
+            alt="">
         <p class="texto_grande">Lorem ipsum <b>dolor sit amet</b> consectetur <strong> adipisicing elit. </strong>Ut
             cupiditate
             exercitationem <em>corrupti, neque hic</em>
@@ -126,19 +131,21 @@
                 totam necessitatibus? Libero soluta exercitationem facere et?</p>
         </article>
         <article>
-            <form action="" method="get">
+            <form id="form_ejemplo" action="" method="get" onsubmit="validarFormulario(event)">
                 <img class="starbucks"
                     src="https://blog.hubspot.es/hs-fs/hubfs/ES%20Blog%20images/Los%2015%20logos%20m%C3%A1s%20creativos%20e%20inspiradores%20del%20mundo/logo_famoso_starbucks.jpg?width=650&name=logo_famoso_starbucks.jpg"
                     alt="" width="100px">
                 <fieldset>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre"><br>
+                    <input type="text" id="nombre" name="nombre"><span class="error"></span><br>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos"><span class="error"></span><br>
                     <label for="nac">Fecha nacimiento:</label>
                     <input type="date" name="nac" id="nac"><br>
                     <label for="correo">Correo:</label>
-                    <input type="email" name="correo" id="correo" required><br>
+                    <input type="text" name="correo" id="correo"><span class="error"></span><br>
                     <label for="contrasenya">Contraseña:</label>
-                    <input type="password" name="contrasenya" id="contrasenya" required>
+                    <input type="password" name="contrasenya" id="contrasenya">
                 </fieldset>
                 <fieldset>
                     <label>Preferencias</label><br>
@@ -166,6 +173,7 @@
                     </select><br>
                     <textarea name="comentario" id="comentario" cols="30" rows="10"
                         placeholder="Escribanos tu comentario aqui"></textarea>
+                    <span class="error"></span>
                 </fieldset>
                 <input type="submit" value="Enviar">
                 <button>Registrar</button>
